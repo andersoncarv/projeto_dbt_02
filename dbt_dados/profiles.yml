@@ -1,0 +1,12 @@
+dbt_dados:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: 'athena-493617'
+      dataset: 'dbt_dw'
+      threads: 4  
+      keyfile: 'C:\Novo\DBT\\Udemy\athena-493617-b83b1b71a434.json'
+      
+      
